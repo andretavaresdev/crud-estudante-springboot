@@ -15,11 +15,7 @@ public class EstudanteModels {
     private String email;
     private int idade;
 
-    public EstudanteModels(Long id, String nome, String email, int idade) {
-        this.id = id;
-        this.nome = nome;
-        this.email = email;
-        this.idade = idade;
+    public EstudanteModels() {
     }
 
     public Long getId() {

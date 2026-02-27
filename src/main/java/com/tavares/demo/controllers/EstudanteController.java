@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/estudantes")
+@RequestMapping(path ="/estudantes")
 public class EstudanteController {
 
     @Autowired
@@ -24,7 +24,7 @@ public class EstudanteController {
         return estudanteService.findAll();
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public void deletarEstudante(@PathVariable Long id){
         estudanteService.deletarEstudante(id);
     }
