@@ -1,6 +1,7 @@
 package com.tavares.demo.models;
 
 
+import com.tavares.demo.enums.EstudanteEnum;
 import jakarta.persistence.*;
 
 @Entity
@@ -14,6 +15,7 @@ public class EstudanteModels {
     private String nome;
     private String email;
     private int idade;
+    private EstudanteEnum estudanteEnum;
 
     public EstudanteModels() {
     }
@@ -48,5 +50,14 @@ public class EstudanteModels {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+
+    public EstudanteEnum getEstudanteEnum() {
+        return estudanteEnum;
+    }
+
+    public void setEstudanteEnum(EstudanteEnum estudanteEnum) {
+        this.estudanteEnum = estudanteEnum;
     }
 }

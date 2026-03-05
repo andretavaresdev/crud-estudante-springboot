@@ -31,9 +31,7 @@ public class EstudanteService {
     }
 
     public EstudanteModels atualizar(Long id, EstudanteModels estudanteModels){
-
         EstudanteModels model = estudanteRepository.findById(id).get();
-
         model.setNome(estudanteModels.getNome());
         model.setEmail(estudanteModels.getEmail());
         model.setIdade(estudanteModels.getIdade());
